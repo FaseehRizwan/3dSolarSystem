@@ -1,11 +1,12 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24,28&height=180&section=header&text=3D%20Solar%20System&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Interactive%20Hand-Controlled%20Space%20Experience&descSize=18&descAlignY=51"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24,28&height=180&section=header&text=3D%20UNIVERSE&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Interactive%20Hand-Controlled%20Solar%20System%20%2B%20Space%20Experience&descSize=18&descAlignY=51"/>
 
 [![GitHub Stars](https://img.shields.io/github/stars/FaseehRizwan/3dSolarSystem?style=for-the-badge&logo=github)](https://github.com/FaseehRizwan/3dSolarSystem/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/FaseehRizwan/3dSolarSystem?style=for-the-badge&logo=github)](https://github.com/FaseehRizwan/3dSolarSystem/network)
 [![GitHub Issues](https://img.shields.io/github/issues/FaseehRizwan/3dSolarSystem?style=for-the-badge&logo=github)](https://github.com/FaseehRizwan/3dSolarSystem/issues)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](LICENSE)
+[![Live Demo](https://img.shields.io/badge/🚀_LIVE_DEMO-4CAF50?style=for-the-badge)](https://faseehrizwan.github.io/3dSolarSystem/)
 
 </div>
 
@@ -13,22 +14,26 @@
 
 ## 🌌 About The Project
 
-**3D Solar System** is an interactive web-based application that brings the cosmos to your fingertips! Explore our solar system in stunning 3D with an innovative **hand gesture control system** powered by AI. Simply turn on your camera and use your hands to navigate through space - no mouse or keyboard needed!
+**3D Universe** is an interactive web-based application that brings the entire solar system to your fingertips! Explore all 8 planets, the Sun, Earth's moon, mysterious UFOs, and 8000+ stars in stunning 3D with an innovative **hand gesture control system** powered by MediaPipe AI. Simply turn on your camera and use your hands to navigate through space - no mouse or keyboard needed!
 
 ### ✨ Key Features
 
-- 🪐 **3D Planetary Models** - Experience the solar system in three dimensions
-- 👋 **Hand Gesture Control** - Navigate using intuitive hand movements via webcam
-- 📷 **Real-time Camera Integration** - Powered by MediaPipe for accurate hand tracking
-- 🎮 **Interactive Navigation** - Move, rotate, and explore at your own pace
-- 🚀 **Lightweight & Fast** - Optimized low-poly models for smooth performance
-- 💻 **Pure Web Technologies** - Built with HTML, CSS, and JavaScript (no heavy frameworks)
+- 🪐 **Complete Solar System** - All 8 planets (Mercury to Neptune) with accurate orbits
+- 🌍 **Enhanced Earth** - Atmosphere, clouds, orbiting moon, and 5 satellites
+- 🛸 **Mysterious UFOs** - 6 UFO objects with glowing green domes patrolling space
+- ⭐ **8000+ Stars** - Procedurally generated starfield with color variations
+- 👋 **Hand Gesture Control** - Rotate view with palm, zoom with pinch gestures
+- 📷 **Live Camera Preview** - Real-time hand tracking visualization in corner
+- 🎮 **Dual Control Mode** - Use hands OR traditional mouse/keyboard
+- 🌫️ **Atmospheric Effects** - Fog, lighting, and realistic rendering
+- 🚀 **Smooth Performance** - 60 FPS with optimized Three.js rendering
+- 💻 **Pure Web Technologies** - HTML, CSS, JavaScript (no build tools required)
 
 <div align="center">
 
-### 🎥 Demo
+### 🎥 Live Demo
 
-> **[Live Demo Coming Soon]** 🚀
+**✨ [Experience the Universe Now!](https://faseehrizwan.github.io/3dSolarSystem/) ✨**
 
 </div>
 
@@ -110,36 +115,44 @@
 ### Hand Gesture Controls
 
 1. **Enable Camera**
-   - Click the "Enable Hand Control" button
+   - Camera activates automatically on page load
    - Allow camera permissions when prompted
+   - Hand tracking preview appears in bottom-right corner
 
-2. **Hand Gestures**
-   - ✋ **Open Palm** - Activate control mode
-   - 👆 **Index Finger Point** - Move view direction
-   - ✌️ **Peace Sign** - Rotate view
-   - 👌 **Pinch Gesture** - Zoom in/out
-   - ✊ **Closed Fist** - Reset view
+2. **Hand Gestures** (Automatically Detected)
+   - 🖐️ **Move Hand Left/Right** - Rotate view horizontally (azimuth)
+   - 🖐️ **Move Hand Up/Down** - Rotate view vertically (polar)
+   - 👌 **Pinch Close** (thumb + index < 0.04) - Zoom IN
+   - 🖐️ **Open Wide** (thumb + index > 0.15) - Zoom OUT
+   - 📺 **Live Feedback** - Yellow circle appears around pinch gesture
 
-3. **Tips**
+3. **Tips for Best Tracking**
    - Keep your hand 1-2 feet from the camera
-   - Ensure good lighting conditions
+   - Ensure good lighting conditions (front-lit, not backlit)
    - Move hand slowly for precise control
-   - Use a plain background for better tracking
+   - Use a plain background for better hand detection
+   - Green skeleton overlay shows when hand is detected
 
 ---
 
 ## 🪐 Solar System Objects
 
-The application includes the following celestial bodies:
+The application includes a complete solar system with accurate orbital distances:
 
-| Planet | Features | Details |
-|--------|----------|---------|
-| ☀️ **Sun** | Central star | Light source, rotation animation |
-| 🌍 **Earth** | Third planet | Rotating with moon orbit |
-| 🔴 **Mars** | Red planet | Rocky terrain texture |
-| 🪐 **Jupiter** | Gas giant | Storm patterns, large scale |
-| 🌙 **Moon** | Earth's satellite | Orbits around Earth |
-| *More planets coming soon...* | | |
+| Object | Type | Distance | Size | Color | Special Features |
+|--------|------|----------|------|-------|------------------|
+| ☀️ **Sun** | Star | Center (0) | 5 units | Yellow (#ffdd00) | Light source, rotation |
+| ☿️ **Mercury** | Rocky Planet | 10 units | 0.8 | Gray (#aaaaaa) | Fastest orbit |
+| ♀️ **Venus** | Rocky Planet | 15 units | 1.2 | Beige (#e3bb76) | Brightest planet |
+| 🌍 **Earth** | Rocky Planet | 22 units | 1.5 | Blue (#1144cc) | Atmosphere, clouds, moon, 5 satellites, label |
+| 🌙 **Moon** | Satellite | Orbits Earth | 0.5 | Gray (#cccccc) | Orbits Earth at 3 units |
+| 🔴 **Mars** | Rocky Planet | 30 units | 1.0 | Red (#ff4500) | The Red Planet |
+| 🪐 **Jupiter** | Gas Giant | 45 units | 3.5 | Tan (#d8ca9d) | Largest planet |
+| 🪐 **Saturn** | Gas Giant | 65 units | 3.0 | Beige (#c5a16f) | **Iconic ring system** |
+| 🔵 **Uranus** | Ice Giant | 85 units | 2.0 | Cyan (#4fd0e7) | Tilted rotation |
+| 🔵 **Neptune** | Ice Giant | 105 units | 1.9 | Deep Blue (#2b32a0) | Farthest planet |
+| 🛸 **UFOs (6x)** | Mystery | 35-75 units | 0.6 | Silver + Green | Flying saucers with green domes |
+| ⭐ **Stars** | Background | 800 units | 8000+ | White/Blue/Red | Rotating starfield |
 
 ---
 
@@ -162,17 +175,30 @@ The application includes the following celestial bodies:
 
 ## 🎯 Roadmap
 
-- [x] Basic 3D solar system model
-- [x] Hand gesture control integration
-- [x] Camera feed processing
-- [ ] Add all planets (Mercury, Venus, Saturn, Uranus, Neptune)
-- [ ] Planetary information panels
-- [ ] Realistic textures and materials
-- [ ] Sound effects and background music
-- [ ] Mobile device support
-- [ ] VR mode support
-- [ ] Educational facts and quizzes
-- [ ] Customizable viewing modes
+### ✅ Completed Features
+- [x] Complete solar system (all 8 planets + Sun)
+- [x] Hand gesture control integration (rotate + zoom)
+- [x] Camera feed with live preview
+- [x] Earth special effects (atmosphere, clouds, moon, satellites)
+- [x] Saturn ring system
+- [x] 8000+ star background with fog
+- [x] UFO objects with glowing effects
+- [x] Orbit paths visualization
+- [x] Dual control mode (hand + mouse/keyboard)
+- [x] Live deployment on GitHub Pages
+
+### 🚧 Planned Enhancements
+- [ ] Realistic planet textures (NASA imagery)
+- [ ] Clickable planets with info panels
+- [ ] Sound effects and ambient space music
+- [ ] More moons (Mars, Jupiter, Saturn systems)
+- [ ] Asteroid belt
+- [ ] Comets and shooting stars
+- [ ] Mobile touch controls optimization
+- [ ] VR mode support (WebXR)
+- [ ] Educational quiz mode
+- [ ] Customizable camera paths/tours
+- [ ] Performance stats overlay
 
 ---
 
@@ -190,10 +216,12 @@ Contributions are what make the open source community such an amazing place to l
 
 ## 🐛 Known Issues
 
-- Hand tracking may be less accurate in low light conditions
-- Performance may vary on older devices
-- Camera permissions required (HTTPS only)
-- Some gestures may need calibration
+- **Low Light Performance**: Hand tracking less accurate in dim lighting (requires well-lit environment)
+- **HTTPS Required**: Camera access only works on HTTPS or localhost
+- **Pinch Sensitivity**: Pinch gesture detection thresholds may need adjustment for different hand sizes
+- **Mobile Performance**: May have reduced FPS on older mobile devices (8000 stars + planets)
+- **Camera Mirror Effect**: Video preview is mirrored (scaleX: -1) for natural interaction
+- **Browser Compatibility**: Best performance on Chrome/Edge (MediaPipe optimized for Chromium)
 
 *Found a bug? [Open an issue](https://github.com/FaseehRizwan/3dSolarSystem/issues)*
 
@@ -223,7 +251,46 @@ Full-Stack Developer | AI Specialist | 3D Artist | Game Developer
 
 ---
 
-## 🙏 Acknowledgments
+## � Technical Implementation
+
+### Core Architecture
+- **Three.js Scene**: 60 FPS rendering with fog effects (density: 0.002)
+- **Camera Setup**: PerspectiveCamera (60° FOV, position: 0,20,50)
+- **Orbit Controls**: Damping enabled, auto-rotate disabled, min/max distance: 5-200
+- **Lighting**: Point light from sun + ambient light for visibility
+
+### Hand Tracking Pipeline
+```javascript
+// MediaPipe Hands Configuration
+maxNumHands: 1
+modelComplexity: 1
+minDetectionConfidence: 0.5
+minTrackingConfidence: 0.5
+
+// Hand State Tracking
+Palm Position (Landmark 9) → Camera Rotation
+Thumb-Index Distance → Pinch Detection & Zoom
+```
+
+### Performance Optimizations
+- Low-poly planet models (16-64 segments)
+- Efficient particle system for 8000 stars
+- Orbit controls with damping (factor: 0.05)
+- Responsive rendering with `devicePixelRatio`
+- Selective features (Earth gets special treatment)
+
+### File Structure
+```
+3dSolarSystem/
+├── index.html          # Main HTML with embedded Three.js scene
+├── style.css          # Separated UI styles (camera preview, legends)
+├── script.js          # Separated JavaScript logic
+└── README.md          # This file
+```
+
+---
+
+## �🙏 Acknowledgments
 
 - [Three.js](https://threejs.org/) - 3D graphics library
 - [MediaPipe](https://mediapipe.dev/) - Hand tracking solution by Google
